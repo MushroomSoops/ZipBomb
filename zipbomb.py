@@ -54,7 +54,7 @@ if __name__ == '__main__':
 		os.remove('%d.zip'%i)
 	if os.path.isfile(out_zip_file):
 		os.remove(out_zip_file)
-	os.rename('%d.zip'%(n_levels+1),out_zip_file)
+	os.rename('%d.zip'%(n_levels),out_zip_file)
 	end_time = time.time()
 	print 'Compressed File Size: %.2f KB'%(get_file_size(out_zip_file)/1024.0)
 	print 'Size After Decompression: %d GB'%decompressed_size
